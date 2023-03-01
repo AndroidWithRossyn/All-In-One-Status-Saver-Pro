@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/common_end_color</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">@color/common_end_color</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--UI Colors-->
+    <color name="main_bg_home_color">#f5f7ff</color>
+    <color name="common_start_color">#4a53ba</color>
+    <color name="common_end_color">#28308e</color>
+    <color name="home_btn_bg_color">#fff</color>
+    <color name="home_right_arrow_color">#2D3495</color>
+    <color name="home_btn_txt">#2D3495</color>
+    <color name="sub_tab_bg_color">#ccffffff</color>
+    <color name="tab_press_bg">#3D3DAA</color>
+    <color name="tab_unpress_bg">#ffffff</color>
+    <color name="tab_press_text_color">#ffffff</color>
+    <color name="tab_unpress_text_color">#000000</color>
+    <color name="ic_icon_bg_color">#ffffff</color>
+    <color name="circle_bg_color">#ccffffff</color>
+    <color name="recent_circle_bg_color">#cc000000</color>
+    <color name="txt_bg_color">#fff</color>
+    <color name="download_btn_text_color">#fff</color>
+    <color name="download_btn_color">#3D3DAA</color>
+    <color name="help_text_color">#000</color>
+    <color name="help_bg_color">#ffffff</color>
+    <color name="top_text_color">#fff</color>
+
+    <!--settings UI-->
+    <color name="settings_icon_color">#000</color>
+    <color name="switch_track_color">#D3D3D3</color>
+    <color name="switch_thumb_color">#3739A2</color>
+    <color name="settings_divider_color">#D3D3D3</color>
+    <color name="setting_txt_color">#000</color>
+</resources>

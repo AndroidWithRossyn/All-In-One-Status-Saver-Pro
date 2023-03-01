@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">All In One Status Saver</string>
+
+    <string name="foldername" translatable="false">All Status Saver</string>
+    <string name="folderwa" translatable="false">All WA Status Saver</string>
+
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">Ok</string>
+
+    <string name="wapp_permission">Click on this button and Allow permission to access your status</string>
+    <string name="allow_storage_access">Allow storage access</string>
+    <string name="step_1">Step 1</string>
+    <string name="first_step">Tap on icon to open Whatsapp and First you have to see Status from Whatsapp</string>
+    <string name="wa_first_step">Tap on icon to open WA Business and First you have to see Status from Whatsapp Business</string>
+    <string name="step_2">Step 2</string>
+    <string name="second_step">Once you seen Status in Whatsapp then open this application</string>
+    <string name="wa_second_step">Once you seen Status in Whatsapp Business then open this application</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_three">Your seen status will be here in this app and from here you can Download and Share</string>
+
+
+    <!--insta-->
+    <string name="dl_started" translatable="false">Download started</string>
+    <string name="downloaded" translatable="false">Media downloaded successfully</string>
+    <string name="downloading" translatable="false">"Please wait...Downloading Media"</string>
+    <string name="write_permission_msg">Write Storage permission is required to save videos and images</string>
+    <string name="yes">Yes</string>
+    <string name="permission_req">Permission Required</string>
+    <string name="instagram_not_found">Please Install Instagram First For Use This App.</string>
+
+    <!--tiktok-->
+    <string name="step_4">Step 4</string>
+    <string name="tik_server">https://tinyurl.com/3snv38ez</string>
+    <string name="tik_location">Location</string>
+    <string name="tik_not_marked">not_marked</string>
+
+    <string name="whatsapp">WhatsApp</string>
+    <string name="wa_business">WA Business</string>
+    <string name="instagram">Instagram</string>
+    <string name="tiktok">Tiktok</string>
+    <string name="likee">Likee</string>
+    <string name="fb">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="gallery">Gallery</string>
+    <string name="vimeo">Vimeo</string>
+    <string name="recent_status">Recent status</string>
+    <string name="help">Help</string>
+    <string name="snackvideo">SnackVideo</string>
+    <string name="sharechat">ShareChat</string>
+    <string name="roposo">Roposo</string>
+    <string name="chingari">Chingari</string>
+    <string name="moj">Moj</string>
+    <string name="mx_takatak">MX TakaTak</string>
+    <string name="mx_takatak_server">https://takatak.katarmal.in/v1/processUrl</string>
+    <string name="invalid">Invalid URL!!!</string>
+    <string name="mitron">Mitron</string>
+    <string name="zili">Zili</string>
+
+
+    <!--admob ids-->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!--MAX ad ids-->
+    <string name="max_banner">e26e4943cd27ddfa</string>
+    <string name="max_interstitial">8f8c3534f7c2bbcf</string>
+
+
+</resources>

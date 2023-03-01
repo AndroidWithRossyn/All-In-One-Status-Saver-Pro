@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.35"
+            android:background="@drawable/bg_common">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner_container"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.28"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/sp_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/top_text_color"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_12sdp"
+                android:src="@drawable/settings"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.72"
+            android:background="@drawable/main_bg_home">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_10sdp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/wsBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/whts" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/whatsapp"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/waBusiBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/wabus" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+
+                            <TextView
+                                android:id="@+id/txt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/wa_business"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/insBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/insta" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/instagram"
+                                android:textColor="@color/home_btn_txt"
+                                android:textStyle="bold"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/tokBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/tiktok" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/tiktok"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/likeeBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/likee" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/likee"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/fbBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/fb" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/fb"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/snackBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/snack" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/snackvideo"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/tweatBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/twi" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/twitter"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/sChatBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/share_chat" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/sharechat"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/mojBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/kmoj" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/moj"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/mxBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/mxtakatak" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/mx_takatak"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/roposoBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/roposo" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/roposo"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/chingariBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/kchingari" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/chingari"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/mitronBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/ic_mitron" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/mitron"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/ziliBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/ic_zili" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/zili"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/vimeoBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/vimeo" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/vimeo"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:gravity="center"
+                        app:cardBackgroundColor="@color/home_btn_bg_color"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:id="@+id/galBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/_30sdp"
+                                android:layout_height="@dimen/_30sdp"
+                                android:padding="@dimen/_6sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_12sdp"
+                                android:background="@drawable/ic_icon_bg"
+                                android:src="@drawable/gallery" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_12sdp"
+                                android:layout_height="@dimen/_12sdp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/_15sdp"
+                                android:src="@drawable/right_arrow"
+                                app:tint="@color/home_right_arrow_color" />
+
+                            <TextView
+                                android:id="@+id/txt8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_60sdp"
+                                android:text="@string/gallery"
+                                android:textStyle="bold"
+                                android:textColor="@color/home_btn_txt"
+                                android:textSize="@dimen/_13sdp" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/lay_banner_ad" />
+</RelativeLayout>
